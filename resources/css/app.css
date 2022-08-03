@@ -1,0 +1,17 @@
+/*can change css here*/
+
+body,
+* {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+
+.body_two {
+    background-color: blue;
+}
+
+.header {
+    background-color: blue;
+    width: 100%;
+}

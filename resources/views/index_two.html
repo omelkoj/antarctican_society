@@ -1,0 +1,42 @@
+@extends('layouts.app') @section('content')
+<h1>$title should be here!</h1>
+<h2>Pulling from Database</h2>
+<table>
+    <tr>
+        <th></th>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    @foreach($stations as $station)
+    <tr>
+        <td>{{$station->id}}</td>
+        <td>{{$station->stations_name}}</td>
+        <td>{{$station->stations_year}}</td>
+    </tr>
+    @endforeach
+</table>
+<p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, dolorum
+    dicta quibusdam voluptates sunt dolores ipsam praesentium culpa reiciendis
+    pariatur voluptatibus obcaecati quo veniam tempora ducimus laboriosam animi
+    sequi omnis vero. Tempore, ullam quaerat ducimus nulla ad dicta neque culpa,
+    cupiditate eaque ipsam magnam aut ex sunt tenetur, quam mollitia.
+</p>
+<h2>Laravel Migration</h2>
+<table>
+    <tr>
+        <th></th>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    @foreach($stations_copy as $station)
+    <tr>
+        <td>{{$station->id}}</td>
+        <td>{{$station->stations_name}}</td>
+        <td>{{$station->stations_year}}</td>
+    </tr>
+    @endforeach
+</table>
+@endsection

@@ -1,0 +1,447 @@
+/*can change css here*/
+/*$desktop: 1200px;*/
+/*$laptop: 1024px;*/
+/*$tablet: 768px;*/
+/*$phone: 480px;*/
+/*1200px*/
+/*550/600px*/
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@600&display=swap");
+
+body,
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans Devanagari", sans-serif;
+}
+
+.header_container {
+    width: 100%;
+}
+
+.header {
+    background-color: #302da3;
+    width: 100%;
+    height: 100px;
+    font-family: "IBM Plex Sans Devanagari", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid white;
+    /*box-shadow: 0 6px 5px -2px gray;*/
+}
+
+.header img {
+    height: 45px;
+    padding-left: 1em;
+}
+
+.header_two img {
+    height: 45px;
+    padding-left: 1em;
+}
+
+.img_container {
+    display: flex;
+    flex-shrink: 2;
+}
+
+.header_two {
+    display: none;
+}
+
+.header div {
+    flex-basis: 300px;
+    font-size: 1.6rem;
+}
+
+.header_two div {
+    flex-basis: 300px;
+    font-size: 1.6rem;
+}
+
+/*@media screen and (max-width: 1215px) {
+    .header div {
+        width: 300px;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header div {
+        width: 250px;
+        font-size: 1.4rem;
+    }
+}*/
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger_menu {
+    display: none;
+}
+
+.stations_title_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.stations_title {
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.user_container {
+    display: flex;
+    width: 100%;
+    /*flex-shrink: 2;*/
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+}
+
+.user_title {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fee76d;
+}
+
+.main_content {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_content_tables {
+    width: 100%;
+    margin-left: 3em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid black;
+    align-items: center;
+}
+
+@media screen and (max-width: 1600px) {
+    .main_content_tables {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .main_content {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main_content_tables {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .main_content {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main_content_tables {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main_content {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_content_tables {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main_content {
+        width: 93%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main_content_tables {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main_content {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.main_content_two {
+    display: flex;
+    flex-direction: column;
+}
+
+.add_edit_buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3em;
+}
+
+@media screen and (max-width: 576px) {
+    .add_edit_buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .add_station_button {
+        margin-bottom: -15px;
+    }
+}
+
+.add_station_button {
+    background-color: #fee76d;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    font-size: 0.9rem;
+}
+
+.edit_button {
+    background-color: #302da3;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .add_station_button {
+        width: 85%;
+    }
+
+    .edit_button {
+        width: 85%;
+    }
+}
+
+.main_content_with_buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    background-color: #302da3;
+    height: 680px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    padding-top: 75px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1200px) {
+    .hamburger_menu {
+        display: inline-block;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.logout_button_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-left: -10px;
+}
+
+.logout_button_container a {
+    display: flex;
+    color: black;
+    width: 50px;
+    height: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logout_button {
+    display: inline-block;
+    background-color: #fee76d;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 600;
+    border: solid black 1px;
+    width: 100%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        display: none;
+    }
+
+    .header_two {
+        background-color: #302da3;
+        width: 100%;
+        height: 100px;
+        font-family: "IBM Plex Sans Devanagari", sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        border-bottom: 1px solid white;
+    }
+
+    .stations_title_container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stations_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+    }
+
+    .img_container_two {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 300px;
+    }
+
+    .logo {
+        display: flex;
+        flex-basis: 300px;
+        margin-left: -1em;
+    }
+
+    .user_title {
+        display: none;
+    }
+
+    .user {
+        justify-content: flex-end;
+    }
+
+    .add_edit_buttons {
+        margin-left: 1.5em;
+        display: flex;
+        width: 100%;
+    }
+
+    .main_content_tables {
+        margin-left: 1.5em;
+    }
+}
+
+table,
+th,
+td {
+    height: 32px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+
+th div {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #fee76d;
+    width: 75%;
+    padding: 2px;
+    margin: 0 auto;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(48, 45, 163, 0.15);
+}
+
+nav select {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: #fee76d;
+    width: 75%;
+    padding: 2px;
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: center;
+}
