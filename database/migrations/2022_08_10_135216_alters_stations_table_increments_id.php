@@ -13,11 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('stations_copies', function (Blueprint $table) {
-            $table->id();
-            $table->string('stations_name');
-            $table->string('stations_year');
-            $table->timestamps();
+        Schema::table('stations', function(Blueprint $table) {
+            $table->id('Station_ID')->change();
         });
     }
 
@@ -28,6 +25,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('stations_copies');
+        
     }
 };

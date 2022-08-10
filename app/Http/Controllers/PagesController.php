@@ -5,13 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\stations_copy;
+use App\Models\User;
 
 class PagesController extends Controller
 {
     //method - function created inside class, public so we can access from outside of class
     public function index() {
         //$title = 'Welcome to Laravel!!!';
-        $stations = DB::table('stations')->get();
+        $stations = DB::table('stations')->get(); 
         //second way with model
         $stations_copy = stations_copy::get();
         //two ways
